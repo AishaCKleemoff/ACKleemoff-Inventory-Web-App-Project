@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACKleemoff-Inventory-Web-App-Project</title>
     <script src="./main.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
-    <h1>My Best Friend  Inventory Web App Project </h1>
-    <form>
-        <label>
-My Best Freind
-<input id=""
-        </label>
-        <label>
-            Price: $
-            <input id="price" name="price" type="number" 
-        </label>
-        <label>
+  </head>
+  <body>
+    <header>
+      <h1>My Best Friend Inventory Web App Project</h1>
+    </header>
+    <main>
+        <section id="inventory">
+            <div>
+                <h3>Kinky Straight BF</h3>
+                <img class="kinky-straight" src="./assests/kinky-straight.jpeg" alt="Kinky Straight hair extention bundle, person holding hair three hair bundles, with shelving holding cardboard boxes">
+                <p>
+                    $227.00             
+                </p>
+                <p>
+                    In-Stock
+                </p>
+            </div>
+            <div>
+                <h3>Red Wine BF</h3>
+                <img class="red-wine" src="./assests/red-wine.jpg"
+            </div>
+        </section>
+      <section id="form">
+        <form>
+          <label> Product Name <input id="product-name" type="text"</label> </br>
+          <label> Price: $ <input id="price" name="price" type="number" </label> </br>
+          <label>
             In-Stock
-            <input id="in-stock" name="in-stock" type="checkbox" checked>
-        </label>
-    </form>
-    
-</body>
+            <input id="in-stock" name="in-stock" type="checkbox" checked />
+
+          </label>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
