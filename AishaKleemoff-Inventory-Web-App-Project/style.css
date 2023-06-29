@@ -1,29 +1,2 @@
-body {
-    background-color: #F2D6CE;
-}
 
-header {
-    text-align: center;
-}
-
-h1 {
-    background-color: rgb(255, 0, 0);
-    border-radius: 25px;
-    width: 1200px;
-    height: 150px;
-}
-div {
-     background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); 
-}
-
-h2 {
-    text-decoration: underline;
-}
-
-main {
-
-}
-#form {
-
-}
 
