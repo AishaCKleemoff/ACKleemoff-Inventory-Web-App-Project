@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ACKleemoff-Inventory-Web-App-Project</title>
+    <title>My-Best-Friend-Inventory-Web-App-Project</title>
     <script src="./main.js" defer></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
+        <img src="./assests/BF2-salon-logo-png-image_6872052.png" alt="bf logo" id="logo-bf"/>
       <h1>My Best Friend Inventory Web App Project</h1>
     </header>
     <main>
@@ -48,13 +49,31 @@
         </section>
       <section id="form">
         <form>
-            <h2>Add New Best Friend </h2>
-          <label> Product Name <input id="product-name" type="text"</label> </br>
-          <label> Price: $ <input id="price" name="price" type="number" </label> </br>
-          <label>
-            In-Stock
-            <input id="in-stock" name="in-stock" type="checkbox" checked />
-
+            <!-- index.html -->
+<fieldset>
+    <legend>Best Friend</legend>
+    <label>
+      Name 
+      <input
+        id="bf-name"
+        type="text"
+        name="bundle"
+        value="BF-Name"
+      />
+    </label>
+    <label>
+      Price
+      <input id="bf-price" type="number" name="bundle" value="BF-Price"/>
+    </label>
+    <label>
+        Stock 
+        <input id="bf-stock"
+        type="text"
+        name="bundle"
+        value="Stock"
+    </label>
+    <!-- ... -->
+  </fieldset>
           </label>
         </form>
       </section>
