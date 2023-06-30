@@ -1,12 +1,22 @@
-console.log("Aisha is a Software Developer");
+const btnsRemove = document.querySelectorAll('.btn-remove');
 
-const form = document.querySelector("form");
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const price = document.querySelector("#price");
-  console.log(price.value);
-
-  const stock = document.querySelector("#stock");
-  console.log(stock.value);
+btnsRemove.forEach((button) => {
+    button.addEventListener('click', (event) => {
+        event.target.parentNode.parentNode.parentNode.remove();
+    });
 });
+btnsStock.forEach((button) => {
+    button.addEventListener('click', (event) => {
+        if (event.target.nextSibling.textContent === 'In Stock') {
+            event.target.nextSibling.classList.add('out-stock');
+            event.target.nextSibling.classList.remove('stock-in');
+            event.target.nextSibling.textContent = 'Out Of Stock';
+            event.target.nextSibling.textContent = 'In Stock';
+        }
+    });
+});
+
+const currentYear = document.querySelector('#current-year');
+const date = new Date();
+const year = date.getFullYear();
+currentYear.append(year);

@@ -33,7 +33,7 @@
                     <button class="btn-stock" type="button">In-Stock</button><span class="stock">In-Stock</span>
                 </div>
                 <div>
-                    <button class="byn-remove" type="button">Remove</button>
+                    <button class="btn-remove" type="button">Remove</button>
                 </div>
                </aside>  
                <div id="red-wine" class="product">
@@ -61,14 +61,14 @@
         
             <div id="two-tone">
                 <aside class="bf-img">
-                <h3>Two Tone BF</h3>
-                <img class="best-friend" src="./assests/two-tone.jpeg" alt="Three straight hair extention bundles, folded in half backwards, top dark brown, bottom chesnut brown">
-                <p>
+                    <img class="best-friend" src="./assests/two-tone.jpeg" alt="Three straight hair extention bundles, folded in half backwards, top dark brown, bottom chesnut brown">
                 </aside>
-                    $115.00
-                </p>
+                <aside class="bf-description">
+                <h3>Two Tone BF</h3>
+                <br />
                 <p>
-                    Inventory Availability
+                
+                    price: <span class="price">$115.00 </span>
                 </p>
             </div>
             <div>
@@ -77,8 +77,9 @@
                 </p>
             </div>
             <div>
-                <button class="byn-remove" type="button">Remove</button>
+                <button class="btn-remove" type="button">Remove</button>
             </div>
+        </aside>
         </section>
       
 <section id="new-best-friend">
@@ -88,9 +89,9 @@
     <label for="new-best-friend">
       New Best Friend  <br/>
       <input
-        id="bf-name"
-        type="text"
-        name="bundle"
+      type="text"
+      name="new-bf"
+      id="bf-name" 
         required
       />
     </label>
@@ -102,6 +103,12 @@
     </label>
     <br/><br />
 
+    <label for="new-bf-image">
+        Image URL <br />
+        <input type="url" name="bf-image" id="bf-image" />
+    </label>
+    <br /><br/ >
+
     <label>
         Stock Availability <br />
         <select name="stock" id="bf-stock">
@@ -109,16 +116,23 @@
             <option value="in">In Stock</option>
             <option value="out">Out Of Stock</option>
         </select>
-        <input id="bf-stock"
-        type="text"
-        name="bundle"
-        value="Stock"
     </label>
-    <!-- ... -->
+    <br /> <br />
+       <section id="form-btns">
+        <input id="btn-reset" class="form-btn" type="reset" value="Reset" />
+        <input id="btn-submit"
+        class="form-btn"
+        type="submit" value="Submit" />
+       </section>
 </section>
           </label>
         </form>
       </section>
     </main>
+    <footer>
+        <p>
+            My Best Friend <span id="current-year"></span>
+        </p>
+    </footer>
   </body>
 </html>

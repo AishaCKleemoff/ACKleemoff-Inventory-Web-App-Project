@@ -44,14 +44,44 @@ main {
     
 }
 
+h2 {
+    text-align: center;
+    font-weight: bolder;
+    color: blue;
+}
+
 form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    background-color: burlywood;
+    height:160vh;
+    padding-top: 20px;
+    padding-bottom: 35px;
     
 }
 
-.inventory {
-    border: 2px solid;
+
+
+
+
+.bf-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    padding: 20px;
 }
+
+
+
+footer {
+    background-color: coral;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
