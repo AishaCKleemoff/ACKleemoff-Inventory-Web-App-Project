@@ -7,6 +7,6 @@ form.addEventListener("submit", (event) => {
   const price = document.querySelector("#price");
   console.log(price.value);
 
-  const author = document.querySelector("#author");
-  console.log(author.value);
+  const stock = document.querySelector("#stock");
+  console.log(stock.value);
 });

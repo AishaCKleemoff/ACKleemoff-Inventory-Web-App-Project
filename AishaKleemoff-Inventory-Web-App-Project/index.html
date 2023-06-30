@@ -11,69 +11,111 @@
   <body>
     <header>
         <img src="./assests/BF2-salon-logo-png-image_6872052.png" alt="bf logo" id="logo-bf"/>
-      <h1>My Best Friend Inventory Web App Project</h1>
+      <h1>My Best Friend Inventory Web App</h1>
     </header>
     <main>
-        <h2>Current Best Friend Inventory</h2>
+        
         <section id="inventory">
-            <div id="kinky-straight">
-                <h3>Kinky Straight BF</h3>
-                <img class="best-friend" src="./assests/kinky-straight.jpeg" alt="Kinky Straight hair extention bundle, person holding hair three hair bundles, with shelving holding cardboard boxes">
+            <h2>Current Best Friend Inventory</h2>
+            <hr />
+
+            <div id="kinky-straight" class="product">
+                <aside class="bf-img">
+                    <img class="best-friend" src="./assests/kinky-straight.jpeg" alt="Kinky Straight hair extention bundle, person holding hair three hair bundles, with shelving holding cardboard boxes">
+                </aside>
+                <aside class="bf-description">
+                <h3 class="bf-name">Kinky Straight BF</h3>
+                <hr />
                 <p>
-                    $226.00             
+                    price: <span class="price">$226.00 </span>            
                 </p>
+                <div>
+                    <button class="btn-stock" type="button">In-Stock</button><span class="stock">In-Stock</span>
+                </div>
+                <div>
+                    <button class="byn-remove" type="button">Remove</button>
+                </div>
+               </aside>  
+               <div id="red-wine" class="product">
+                <aside class="bf-img">
+                    <img class="best-friend2" src="./assests/red-wine.jpg" alt="Three straight red hair extention bundles, white background">
+                </aside>
+                <aside class="bf-description">
+                <h3 class="bf-name">Red Wine BF</h3>
+                <hr />
+                
                 <p>
-                    In-Stock
+                    price: <span class="price">$222.00 </span>
                 </p>
             </div>
-            <div id="red-wine">
-                <h3>Red Wine BF</h3>
-                <img class="best-friend" src="./assests/red-wine.jpg" alt="Three straight red hair extention bundles, white background">
+            <div>
                 <p>
-                    $222.00
-                </p>
-                <p>
-                    In-Stock
+                    <button class="btn-stock" type="button">In-Stock</button><span class="stock">In-Stock</span>
                 </p>
             </div>
+            
+            <div>
+                <button class="btn-remove" type="button">Remove</button>
+            </div>
+        </aside> 
+        
             <div id="two-tone">
+                <aside class="bf-img">
                 <h3>Two Tone BF</h3>
                 <img class="best-friend" src="./assests/two-tone.jpeg" alt="Three straight hair extention bundles, folded in half backwards, top dark brown, bottom chesnut brown">
                 <p>
+                </aside>
                     $115.00
                 </p>
                 <p>
-                    In-Stock
+                    Inventory Availability
                 </p>
             </div>
+            <div>
+                <p>
+                    <button class="btn-stock" type="button">In-Stock</button><span class="stock">In-Stock</span>
+                </p>
+            </div>
+            <div>
+                <button class="byn-remove" type="button">Remove</button>
+            </div>
         </section>
-      <section id="form">
-        <form>
-            <!-- index.html -->
-<fieldset>
-    <legend>Best Friend</legend>
-    <label>
-      Name 
+      
+<section id="new-best-friend">
+    <form>
+        <h2>Add New Best Friend</h2>
+
+    <label for="new-best-friend">
+      New Best Friend  <br/>
       <input
         id="bf-name"
         type="text"
         name="bundle"
-        value="BF-Name"
+        required
       />
     </label>
-    <label>
-      Price
+    <br/><br />
+
+    <label for="new-best-friend-price">
+      Price: $ <br />
       <input id="bf-price" type="number" name="bundle" value="BF-Price"/>
     </label>
+    <br/><br />
+
     <label>
-        Stock 
+        Stock Availability <br />
+        <select name="stock" id="bf-stock">
+            <option>-- Please Select --</option>
+            <option value="in">In Stock</option>
+            <option value="out">Out Of Stock</option>
+        </select>
         <input id="bf-stock"
         type="text"
         name="bundle"
         value="Stock"
     </label>
     <!-- ... -->
-  </fieldset>
+</section>
           </label>
         </form>
       </section>

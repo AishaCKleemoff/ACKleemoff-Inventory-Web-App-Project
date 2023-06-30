@@ -1,6 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsla(0, 100%, 50%, 0.1);
+}
 
 #logo-bf {
-    width: 35vw;
-    padding: 3vw;
-    border-radius: 75%;
+    width: 15vw; 
+    margin: 3px 22px;
+    /* border-radius: 75%; */
+    /* border: 2px solid black ; */
+}
+
+header {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsalmon;
+    position: sticky;
+}
+
+.best-friend {
+    width: 25vw;
+    border: 2px solid;
+    height: 25vw;
+}
+
+.best-friend2 {
+    width: 25vw;
+    border: 2px solid;
+    height: 45vw;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-evenly;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.inventory {
+    border: 2px solid;
 }
