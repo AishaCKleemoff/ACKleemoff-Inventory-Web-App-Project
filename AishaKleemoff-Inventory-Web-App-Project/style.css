@@ -6,6 +6,7 @@
 
 body {
     background-color: hsla(0, 100%, 50%, 0.1);
+    
 }
 
 #logo-bf {
@@ -23,6 +24,7 @@ header {
     align-items: center;
     background-color: lightsalmon;
     position: sticky;
+    top: 0;
 }
 
 .best-friend {
@@ -62,8 +64,11 @@ form {
     
 }
 
+#new-best-friend,#inventory{
+    width: 50vw;
+}
 
-
+ 
 
 
 .bf-description {
